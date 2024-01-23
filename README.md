@@ -12,7 +12,9 @@ This project demonstrates how to integrate Descope with a Next.js application us
 
 ## Getting Started 💿
 
-To get started, you'll need to set up your own instance of this app. This particular app will not work, given that this was auto-created with `amplify init` and is tied to a sandbox AWS environment. This app gives you example code to look at for implementation of Descope in your own applications. Follow these steps to create a similar app for yourself, tied to your own AWS instance:
+Since this app was auto-created with `amplify init` and is tied to a specific sandbox AWS environment. This app is designed to give you example source code to use for implementation of Descope in your own applications. 
+
+To get started actually running this, you'll need to set up your own instance of this app. Follow these steps to create a similar app for yourself, tied to your own AWS instance:
 
 ### 1. Setup Your Repository
 
