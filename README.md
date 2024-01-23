@@ -1,8 +1,16 @@
-# Next-Amplify Sample App with Descope Integration
+<img width="1400" alt="Screenshot 2024-01-23 at 11 08 46 AM" src="https://github.com/descope-sample-apps/descope-amplify-appsync/assets/32936811/1076e6ff-11ee-4d5e-bdd1-02839b8c4843">
+
+---
 
 This project demonstrates how to integrate Descope with a Next.js application using AWS Amplify and GraphQL. It showcases the use of Descope as an OpenID Connect (OIDC) provider for robust authorization controls to your GraphQL backend.
 
-## Getting Started
+## Table of Contents 📝
+
+1. [Getting Started](#getting-started)
+2. [Issue Reporting](#issue-reporting)
+3. [LICENSE](#license)
+
+## Getting Started 💿
 
 To get started, you'll need to set up your own instance of this app. This particular app will not work, given that this was auto-created with `amplify init` and is tied to a sandbox AWS environment. This app gives you example code to look at for implementation of Descope in your own applications. Follow these steps to create a similar app for yourself, tied to your own AWS instance:
 
@@ -54,6 +62,8 @@ type Todo
 
 You'll also need to ensure AWS compliant JWTs are used by configuring it in the Descope Console under [Project Settings](https://app.descope.com/settings/project).
 
+<img width="600" alt="Monosnap Descope Console 2024-01-23 09-31-58" src="https://github.com/descope-sample-apps/descope-amplify-appsync/assets/32936811/38c58292-fa39-4a0a-bc13-37a9b26fcbeb">
+
 ### 5. Implement Client-side Login
 
 Use the React SDK to create a login component. Authenticate client-side and pass the `sessionToken` to your GraphQL backend. If you're curious on how to integrate our React SDK with Next.js, you can look at the `src/app/page.tsx` and `/src/app/components/Login.tsx` pages in this sample app.
@@ -73,6 +83,10 @@ const fetchData = async () => {
 };
 ```
 
-## Conclusion
+## Issue Reporting ⚠️
 
-By following these steps, you will have a functional Next-Amplify application using Descope for authentication and authorization. This setup allows you to leverage the power of AWS Amplify and GraphQL with the security and flexibility of Descope's authentication services.
+For any issues or suggestions, feel free to open an issue in the GitHub repository.
+
+## License 📜
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
