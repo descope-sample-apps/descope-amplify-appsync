@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "nextamplified",
+    "serviceName": "AppSync",
+    "defaultAuthType": {
+      "mode": "API_KEY",
+      "expirationTime": 7
+    },
+    "additionalAuthTypes": [
+      {
+        "mode": "OPENID_CONNECT",
+        "openIDProviderName": "Descope",
+        "openIDIssuerURL": "https://api.descope.com/P2PD8H2nZbPk5cSJfChsc00ZCi0whttps://api.descope.com/P2PD8H2nZbPk5cSJfChsc00ZCi0w/",
+        "openIDClientID": "P2PD8H2nZbPk5cSJfChsc00ZCi0w",
+        "openIDAuthTTL": "0",
+        "openIDIatTTL": "0"
+      }
+    ]
+  }
+}

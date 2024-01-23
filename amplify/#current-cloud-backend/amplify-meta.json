@@ -1,0 +1,53 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-nextamplified-dev-225658-authRole",
+      "UnauthRoleArn": "arn:aws:iam::882548883321:role/amplify-nextamplified-dev-225658-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::882548883321:role/amplify-nextamplified-dev-225658-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-nextamplified-dev-225658-deployment",
+      "UnauthRoleName": "amplify-nextamplified-dev-225658-unauthRole",
+      "StackName": "amplify-nextamplified-dev-225658",
+      "StackId": "arn:aws:cloudformation:us-west-2:882548883321:stack/amplify-nextamplified-dev-225658/9b3e36c0-b9bc-11ee-96ba-0aeee8215221",
+      "AmplifyAppId": "d2nltkcm5zv5ld"
+    }
+  },
+  "api": {
+    "nextamplified": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            }
+          },
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "OPENID_CONNECT",
+              "openIDConnectConfig": {
+                "name": "Descope",
+                "issuerUrl": "https://api.descope.com/P2PD8H2nZbPk5cSJfChsc00ZCi0whttps://api.descope.com/P2PD8H2nZbPk5cSJfChsc00ZCi0w/",
+                "clientId": "P2PD8H2nZbPk5cSJfChsc00ZCi0w",
+                "authTTL": "0",
+                "iatTTL": "0"
+              }
+            }
+          ]
+        },
+        "GraphQLAPIIdOutput": "pl6lnkwt5vd3jcfeg5iexuyfbu",
+        "GraphQLAPIEndpointOutput": "https://nwaoi3lvsfezxilglcktbuqm2a.appsync-api.us-west-2.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-zzftpfiphza4njuxdh7tjemxyu"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-nextamplified-dev-225658-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apinextamplified"
+      },
+      "lastPushTimeStamp": "2024-01-23T08:00:09.569Z",
+      "lastPushDirHash": "W7Xim4LU8DrdaN46O1IoceA3ZPY="
+    }
+  }
+}

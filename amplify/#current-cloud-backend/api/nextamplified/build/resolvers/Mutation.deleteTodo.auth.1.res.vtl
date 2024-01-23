@@ -1,0 +1,24 @@
+## [Start] Authorization Steps. **
+$util.qr($ctx.stash.put("hasAuth", true))
+#set( $isAuthorized = false )
+#if( $util.authType() == "API Key Authorization" )
+$util.unauthorized()
+#end
+#if( $util.authType() == "Open ID Connect Authorization" )
+  #set( $isAuthorized = true )
+  #if( !$isAuthorized )
+    #set( $staticGroupRoles = [{}] )
+    #foreach( $groupRole in $staticGroupRoles )
+      #set( $groupsInToken = $util.defaultIfNull($ctx.identity.claims.get($groupRole.claim), []) )
+      #if( $groupsInToken.contains($groupRole.entity) )
+        #set( $isAuthorized = true )
+        #break
+      #end
+    #end
+  #end
+#end
+#if( !$isAuthorized )
+$util.unauthorized()
+#end
+$util.toJson({"version":"2018-05-29","payload":{}})
+## [End] Authorization Steps. **

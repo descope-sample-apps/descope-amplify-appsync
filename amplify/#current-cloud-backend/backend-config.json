@@ -1,0 +1,31 @@
+{
+  "api": {
+    "nextamplified": {
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "OPENID_CONNECT",
+              "openIDConnectConfig": {
+                "authTTL": "0",
+                "clientId": "P2PD8H2nZbPk5cSJfChsc00ZCi0w",
+                "iatTTL": "0",
+                "issuerUrl": "https://api.descope.com/P2PD8H2nZbPk5cSJfChsc00ZCi0whttps://api.descope.com/P2PD8H2nZbPk5cSJfChsc00ZCi0w/",
+                "name": "Descope"
+              }
+            }
+          ],
+          "defaultAuthentication": {
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            },
+            "authenticationType": "API_KEY"
+          }
+        }
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync"
+    }
+  }
+}

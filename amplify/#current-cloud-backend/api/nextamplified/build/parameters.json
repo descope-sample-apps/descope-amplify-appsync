@@ -1,0 +1,7 @@
+{
+    "AppSyncApiName": "nextamplified",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "S3DeploymentBucket": "amplify-nextamplified-dev-225658-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/60f3cfa0c7a6ec5c432737d54b35f617f7d06636"
+}
