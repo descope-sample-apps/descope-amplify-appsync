@@ -4,6 +4,8 @@
 
 This project demonstrates how to integrate Descope with a Next.js application using AWS Amplify and GraphQL. It showcases the use of Descope as an OpenID Connect (OIDC) provider for robust authorization controls to your GraphQL backend.
 
+> If you're looking for how to use Descope in Angular apps with AppSync, you can reference an example app that one of our customers built with our Angular SDK [here](https://github.com/devlimelabs/descope-oidc-amplify-angular).
+
 ## Table of Contents 📝
 
 1. [Getting Started](#getting-started)
