@@ -11,7 +11,7 @@
   "dependencies": {
     "@descope/react-sdk": "^2.0.5",
     "next": "16.2.11",
-    "react": "^18",
+    "react": "^19.0.0",
     "react-dom": "^18"
   },
   "devDependencies": {
